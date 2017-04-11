@@ -1,0 +1,45 @@
+
+<ion-view>
+    <ion-content class="ak-bg" style="background-color: black;">
+        <div>
+            <div class="logo-header ak-mt-50"></div>
+            <!--  <div>
+            <div>
+              <img src="../img/profile_small_icon.png" class="lg-icons"/>
+              <div>
+                   <input type="text" ng-model="user.username"/>
+                  </div>
+              </div>
+                  
+              <span class=input-label ak-ml-10>Password</span>
+              <img src="../img/password_icon.png" class="lg-icons"/>
+              <input type="password" ng-model="user.password">     
+            </div> -->
+            <!--<label class="item item-input">
+              <span class="input-label">Username</span>
+              <input type="text" ng-model="user.username">
+            </label>
+
+            <label class="item item-input">
+              </label>
+          </div>-->
+            <div class="padding .ak-pt-20">
+                <div style="width:80%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                    <img src="img/profile_small_icon.png" class="lg-icons" />
+                    <input type="text" ng-model="user.username" style=" color: #fff; width:70%; float:left;" placeholder="+966" />
+                </div>
+                <div style="width:80%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                    <img src="img/password_icon.png" class="lg-icons" />
+                    <input type="password" ng-model="user.password" style="color: #fff;  width:70%;float:left;">
+                </div>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:40px;margin-right:40px; padding-left:20px; padding-right:20px;" ng-click="login(user)"> LOGIN </button>
+                <!-- <center style="color: #fff; margin: auto; width: 60%; padding: 10px;">OR</center> -->
+                <button ui-sref="register" class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:40px;margin-right:40px; padding-left:20px; padding-right:20px;"> SIGN UP </button>
+            </div>
+        </div>
+        <!--<h1>{{user}}</h1>
+            <p>{{list}}</p>-->
+    </ion-content>
+</ion-view>

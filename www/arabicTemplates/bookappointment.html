@@ -1,0 +1,48 @@
+<style type="text/css">
+#bookingappointcontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+</style>
+<ion-view title="APPOINTMENTS">
+
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon" style="color: white;"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header ak-bg" style="background-color: black;">
+        <div id="bookingappointcontainer">
+            <div style="color: white; font-size: 16px;top: 5%; position: absolute; right: 8%;;width: 100px; text-align: right">
+               حدد تاريخ
+            </div>
+            <datepicker style="top:10%; ">
+                <input ng-model="dateobj.date" type="text" ng-hide="true" />
+            </datepicker>
+            <div style="color: white; font-size: 16px;top: 70%; position: absolute; right: 8%;width: 100px; text-align: right">
+                حدد وقت
+            </div>
+            <div ng-click="openTimePicker()" style="left: 5%; top: 75%; height: 8%; width: 90%; position:absolute; border-style: solid; border-color: white; border-width: medium;">
+                <div style="position:absolute; width:33.333%; height: 100%; border-right-style: solid; border-right-color: white; border-right-width: medium; ">
+                    <p style="text-align: center; color: white; font-size: 25px;margin-top: 10%; ">
+                        {{hours}}
+                    </p>
+                </div>
+                <div style="position:absolute; width:33.333%; left:33.333%; height: 100%;  border-right-style: solid; border-right-color: white; border-right-width: medium;">
+                    <p style="text-align: center; color: white; font-size: 25px;margin-top: 10%; ">
+                        {{minutes}}
+                    </p>
+                </div>
+                <div style="position:absolute; width:33.333%; left:66.666%; height: 100%;">
+                    <p style="text-align: center; color: white; font-size: 25px;margin-top: 10%; ">
+                        {{ampm}}
+                    </p>
+                </div>
+            </div>
+            <div ng-click="book();" style="left: 5%; top: 90%; height: 6%; width: 90%; position:absolute; border-style: solid; border-color: white; border-width: medium;">
+                <p style="text-align: center; color: white; font-size: 15px; margin-top: 2% ">
+                    كتاب
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,101 @@
+<style type="text/css">
+.signupbox {
+    position: relative;
+    background-color: white;
+    height: 30%;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 70%;
+}
+.profile_img{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    margin: auto;
+    margin-top: 50px
+}
+.profile_name{
+    color: white;
+    text-align: center;
+}
+.toggle_btn{
+    margin-right:70px;
+    width: 90%;
+}
+.notifincation_label{
+    margin-left: 120px;
+    font-size: 18px;
+    color: white;
+     margin-top: -37px;
+}
+.abc{
+    text-align: center;
+}
+</style>
+<ion-view hide-nav-bar="true">
+    
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title"> Account Settings</h1>
+        </div>
+   
+    <ion-content class="has-header ak-bg" style="background-color: black;">
+        <div>
+           
+           <div class="profile_img">
+                    <img src="img/profileicon.png" style="width: 100%; height: 100%;">
+                   
+                </div>
+                 <h4 class="profile_name">{{user.FirstName}}</h4>
+            <form name="form" ng-submit="register()">
+                <div class="padding ak-pt-20">
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/profile_small_icon.png" class="lg-icons" />
+                        <input type="text" ng-model="user.FirstName" style=" color: #fff; width:72%; float:left;" placeholder="Name" />
+                          <button class="custombutton icon ion-edit" style="position: absolute; right: 65px;"></button>
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/mobile_icon.png" class="lg-icons" />
+                        <input type="number" ng-model="user.ContactNumber" style="color: #fff;  width:72%;float:left; background: transparent; border-bottom-color: white;border-bottom-style: solid; border-bottom-width: thin;" placeholder="Mobile">
+                          <button class="custombutton icon ion-edit" style="position: absolute; right: 65px;"></button>
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/email_icon.png" class="lg-icons" />
+                        <input type="email" ng-model="user.EmailAddress" style=" color: #fff; width:72%; float:left; background: transparent; border-bottom-color: white;border-bottom-style: solid; border-bottom-width: thin;" placeholder="Email" />
+                          <button class="custombutton icon ion-edit" style="position: absolute; right: 65px;"></button>
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/password_icon.png" class="lg-icons" />
+                        <input type="password" ng-model="user.Password" style="color: #fff;  width:72%;float:left;" placeholder="Password">
+                          <button class="custombutton icon ion-edit" style="position: absolute; right: 65px;"></button>
+                    </div>
+                </div>
+<!--                 <div class="toggle_btn">
+                  
+                    <ion-toggle style="background-color: transparent; border:none;height: 50px;margin-right: 30px;" ></ion-toggle>
+                    <p class="notifincation_label">Notification</p>
+                </div> -->
+ <div style="text-align: center;    margin-top: 10px;">
+            <div style="color: white;">Notification</div>
+               <span style="color: white;">OFF</span><label class="toggle toggle-calm disable-user-behavior" style="margin-left: 10px;"><input type="checkbox" ng-model="obj.lng1" ng-change="get_value_notification(lng)" class="ng-pristine ng-untouched ng-valid"><div class="track"><div class="handle"></div></div></label><span style="color: white;">ON</span>
+               </div>
+<!--                 <div class="abc">
+                <select ng-model="obj.lng" ng-change="get_value(lng)" style="border:#a82b2b;color:white; padding: 10px 35px 10px 35px; margin-top: 10px;background-color:#a82b2b">
+                    <option class="abc" value="en" selected>English</option>
+                    <option class="abc" value="ar">Arabic</option>
+                </select>
+                </div> -->
+                 <div style="text-align: center;    margin-top: 10px;">
+            <div style="color: white;">Language</div>
+               <img src="img/usflag.png" style="width: 55px;"><label class="toggle toggle-calm disable-user-behavior" style="margin-left: 10px;"><input type="checkbox" ng-model="obj.lng" ng-change="get_value(lng)" class="ng-pristine ng-untouched ng-valid"><div class="track"><div class="handle"></div></div></label><img src="img/saudi.png" style="margin-left: 10px; width: 50px;">
+               </div>
+                <div class="padding ak-pt-20" style="margin-top: 0px;">
+                    <button type="submit" class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:40px;margin-right:40px; padding-left:20px; padding-right:20px;"> SUBMIT </button>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

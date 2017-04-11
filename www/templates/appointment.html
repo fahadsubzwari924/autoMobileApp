@@ -1,0 +1,31 @@
+<ion-view title="APPOINTMENTS">
+
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon" style="color: white;"></button>
+    </ion-nav-buttons>
+<ion-content  class="has-header ak-bg" style="background-color: black;">
+<div>
+	<div style="width:100%; float:left; padding-top:20px; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-right:20px;">
+	<label style="color: #fff; width:70%; float:left;">SELECT CITY</label>
+		<div class="list">
+    <select id="soflow" name="citySelect" ng-options="option.CityName for option in cities.availableOptions track by option.CityId" ng-model="cities.selectedOption" style="background-color: black;" ng-change="hasChanged()"> 
+    </select>
+     <!--<div ng-click="openCitiesPicker()" style="left: 1.5%; top: 06%; height: 6%; width: 92%; position:absolute; border-style: solid; border-color: white; border-width: medium;">
+                <p style="text-align: center; color: white; font-size: 15px; margin-top: 2% ">
+                    Select City
+                </p>
+            </div>-->
+    <label style="color: #fff; width:70%; margin-top: 90px; float:left;">SELECT BRANCH</label>
+    
+   <select id="soflow" name="branchSelect" ng-options="option.BranchName for option in branches.availableOptions track by option.Id" ng-model="branches.selectedOption" style="background-color: black;">
+<!--       <option>Jeddah</option>
+      <option selected>Riyadh</option>
+      <option>Red</option> -->
+    </select>  
+      <div id="map" data-tap-disabled="true"></div>
+	</div>
+
+	 <button ng-click="next()" class="button button-block button-transparent" style="width:100%; border-radius:0px; float:left; padding-left:20px; padding-right:20px;"> NEXT</button>
+</div>
+</ion-content>
+</ion-view>

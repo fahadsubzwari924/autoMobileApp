@@ -1,0 +1,47 @@
+<ion-side-menus>
+    <ion-pane ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-pane>
+    <ion-side-menu side="right">
+        <ion-content class="ak-bg-black">
+            <div class="side-main">
+                <div class="side-img">
+                    <img src="img/profileicon.png" style="width: 100%; height:100%; ">
+                </div>
+                <div class="side-txt">{{$root.name}}</div>
+                <div style="margin-top: 5%;">
+                    <div class="side-listitem" ng-click="$root.navigate('main')">
+                        <span class="padding-right-10px"><i class="ion-ios-home-outline"></i></span>Home<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('app.booking')">
+                        <span class="padding-right-10px"><i class="ion-android-calendar"></i></span>Appointments<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('promotions')">
+                        <span class="padding-right-10px"><i class="ion-checkmark-circled"></i></span>Promotions<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('location')">
+                        <span class="padding-right-10px"><i class="ion-ios-location-outline"></i></span>Our Location<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('promotion')">
+                        <span class="padding-right-10px"><i class="ion-android-contacts"></i></span>Free Services<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('services')">
+                        <span class="padding-right-10px"><i class="ion-checkmark-circled"></i></span>Services<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('about')">
+                        <span class="padding-right-10px"><i class="ion-information-circled"></i></span>About Us<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div class="side-listitem" ng-click="$root.navigate('contact')">
+                        <span class="padding-right-10px"><i class="ion-ios-telephone"></i></span>Contact<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                    <div ng-click="$root.logout()" class="side-listitem">
+                        <span class="padding-right-10px"><i class="ion-power"></i></span>Log out<span><i class="ion-ios-arrow-right ak-float-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

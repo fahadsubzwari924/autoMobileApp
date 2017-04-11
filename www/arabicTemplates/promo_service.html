@@ -1,0 +1,39 @@
+<ion-view>
+    <ion-header>
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title"> خدمات مجانية</h1>
+        </div>
+    </ion-header>
+    <ion-content class="ak-bg" style="background-color: black; overflow-y: hidden;" scroll="false">
+        <div class="logo-header ak-mt-50" style="margin-top: 70px"></div>
+        <p class="ak-promotion-content"> كسب الخصم </p>
+        <p class="ak-promotion-content">دعوة أصدقائك والحصول على نفسك خصم </p>
+        <p class="ak-promotion-content"> إرسال الرمز الترويجي الخاص</p>
+        <p class="ak-promotion-content"> 8892ad-2</p>
+        <button class="btn-share"> الرمز المشترك </button>
+        <div style="width: 80%;text-align: center; margin: auto;margin-top: 22px;">
+        <p  style="color: white;" dir="rtl">هل تمت دعوتك من قبل شخص ما؟ إذا كانت الإجابة بنعم إدخال  
+               الرمز الترويجي له للحصول على الخصم</p>
+            </div>   
+        <div style="margin-left:25%; direction: rtl;">
+        <input type="text" ng-model="user.password" style="color: #fff;  width:50%;float:left ;" placeholder="الترويجي">
+        </div>
+      <div style="margin-top:90px !important; text-align:center;">
+           <button class="btn-save"> حفظ </button>
+         </div>  
+        </div>
+        <div><p style="color:white; font-size:16px; text-align:center;margin-top:10px;">حصة على وسائل الاعلام الاجتماعية</p></div>
+        <ul></ul>
+     <div style="text-align:center">
+        <div class="social-icons">
+            <a id="fb" ng-click="facebookshare()"> <img src="img/facebook_circle.png" style="margin-left: 10px; width:50px;"></a>
+            <a id="fb" ng-click="othershare()"> <img src="img/google_circle.png" style="margin-left: 1px; width:50px;"></a>
+            <a id="fb" ng-click="othershare()"> <img src="img/pinterest_circle.png" style="margin-left: 1px; width:50px;"></a>
+            <a id="fb" ng-click="twittershare()"><img src="img/twitter_circle.png" style="margin-left: 1px; width:50px;"></a>
+        </div>
+        </div>
+    </ion-content>
+</ion-view>

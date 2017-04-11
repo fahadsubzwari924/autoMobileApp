@@ -1,0 +1,59 @@
+<ion-view title="SALES STATS">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" style="color: white;" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon" style="color: white;"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header ak-bg" style="background-color: black;">
+        <div style="position: relative; margin-top: 0px;  padding-bottom: 3%;   background-color: rgba(255,255,255,0.1);     height: 260px; border-bottom-color: white; border-bottom-style: solid; border-bottom-width: thin;">
+            <div style="width:100%; height: 40px;background-color: white;margin-top: 10px;" ng-model="date" ng-click="openDatePicker()" >
+                <div style="line-height:40px; font-weight:bold; font-size:18px;"><span style="margin-left:20px;">{{showdate}}</span></div>
+                </div>
+            <div style="top: 60px; width: 40%; left: 5%; height:30px;background-color: black; position: absolute;">
+                <p style="color: white; text-align: center; font-size: 12px;     margin-top: 3%;">CUSTOMER REFERRED</p>
+            </div>
+            <div style="top:90px; left: 5%; height: 90px; background-color: white; width: 40%; position: absolute;">
+                <p style="color: black; font-size: 72px; text-align: center; margin-top: 30px">{{finalObject.MonthlyReferrals}}</p>
+            </div>
+            <div style="top: 60px; width: 40%; left: 50%; height: 30px;background-color: red; position: absolute;">
+                <p style="color: white; text-align: center; font-size: 12px;     margin-top: 3%;">CONVERSION</p>
+            </div>
+            <div style="top:90px; left: 50%; height: 90px; background-color: white; width: 40%;position: absolute; ">
+                <p style="color: red; font-size: 72px; text-align: center; margin-top: 30px">{{finalObject.MonthlyConversion}}</p>
+            </div>
+            <div style="top: 200px; color: white; position: absolute; left: 6%; font-size:20px">
+                COMMISSION <span><i class="ion-arrow-right-a"></i></span>
+            </div>
+            <div style="top: 200px; color: white; position: absolute; left: 55%; font-size: 30px;">
+                300 SAR
+            </div>
+        </div>
+        <div style="position: relative; margin-top: 0px;  padding-bottom: 3%;   background-color: rgba(255,255,255,0.1);  border-bottom-color: white; border-bottom-style: solid; border-bottom-width: thin;">
+           <div style="width:100%; height: 40px;background-color: white;margin-top: 10px;" ng-model="date" ng-click="openDatePicker1()" >
+                <div style="line-height:40px; font-weight:bold; font-size:18px;"><span style="margin-left:20px;">{{showdate1}}</span></div>
+                </div>
+           <div class="first_header">
+               <span style="color:white; font-size: 18px;font-weight: bold; margin-left:85px;line-height: 40px;">LIFETIME REFERRALS</span>
+               </div>
+               <div class="content">
+                   <span style="color: black; font-size: 32px;line-height: 90px;">{{finalObject.LifeTimeReferrals}}</span>
+                   </div>
+                    <div class="second_header">
+               <span style="color:white; font-size: 18px;font-weight: bold; margin-left:85px;line-height: 40px;">LIFETIME REFERRALS</span>
+               </div>
+               <div class="content">
+                   <span style="color: red; font-size: 32px;line-height: 90px;">{{finalObject.LifeTimeConversion}}</span>
+                   </div>
+            <!--<div style="left: 5%; height: 90px; background-color: white; width: 90%; position: relative;">
+              <p style="color: black; font-size: 32px; text-align: center;">{{finalObject.LifeTimeReferrals}}</p></div>-->
+            <!--<div style="margin-top: 25px; width: 90%; left: 5%; height:40px;background-color: red; position: relative;">
+                <p style="color: white;text-align: center;font-size: 18px; padding-top: 3%;font-weight: bold;">LIFETIME CONVERSION</p>
+                 
+            </div>
+            <div style="left: 5%; height: 90px; background-color: white; width: 90%; position: relative;">
+            <p style="color: red; font-size: 32px; text-align: center;">{{finalObject.LifeTimeConversion}}</p></div>-->
+        </div>
+    
+    </ion-content>
+</ion-view>

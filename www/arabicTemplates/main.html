@@ -1,0 +1,269 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<!-- <ion-tabs class="tabs-icon-top tabs-color-active-positive"> -->
+<!-- Dashboard Tab -->
+<!--   <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
+    <ion-view name="tab-dash"></ion-view>
+  </ion-tab> -->
+<!-- Chats Tab -->
+<!--   <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab> -->
+<!-- Account Tab -->
+<!--   <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab> -->
+<!-- 
+</ion-tabs> -->
+<style type="text/css">
+#container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: black;
+}
+
+#innerContainer {
+    width: 100%;
+    height: 32%;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#sidecontainer1 {
+    width: 49.6%;
+    height: 16.8%;
+    background: #66f;
+    position: absolute;
+    top: 32%;
+    left: 0.2%;
+}
+
+#leftcontainer1 {
+    width: 49.8%;
+    height: 16.8%;
+    background: #66f;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+}
+
+#sidecontainer2 {
+    width: 49.6%;
+    height: 16.7%;
+    background: #66f;
+    position: absolute;
+    top: 49%;
+    left: 0.2%;
+}
+
+#leftcontainer2 {
+    width: 49.8%;
+    height: 16.7%;
+    background: #66f;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+}
+
+#sidecontainer3 {
+    width: 49.6%;
+    height: 16.9%;
+    background: #66f;
+    position: absolute;
+    top: 66%;
+    left: 0.2%;
+}
+
+#leftcontainer3 {
+    width: 49.8%;
+    height: 16.9%;
+    background: #66f;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+}
+
+#sidecontainer4 {
+    width: 49.6%;
+    height: 16.7%;
+    background: #66f;
+    position: absolute;
+    top: 83%;
+    left: 0.2%;
+}
+
+#leftcontainer4 {
+    width: 49.8%;
+    height: 16.7%;
+    background: #66f;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+}
+
+#text {
+    z-index: 100;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 0px;
+}
+
+#text2 {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    left: 25%;
+    text-align: center;
+    top: 80%;
+}
+
+#text1 {
+    z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    top: 80%;
+}
+
+.ava {
+    border-width: 0px;
+}
+</style>
+<ion-view hide-nav-bar="true">
+<!--     <ion-header>
+        <div class="bar bar-header" style="background: transparent;">
+            <button ui-sref="app.notificationsa" class="button icon ion-ios-bell"></button>
+            
+            <img src="img/autotek_logo.png" style="width: 40%; margin-left:25%;">
+            <button  class="button icon ion-gear-a" style="margin-left:30%;"></button>
+        </div>
+    </ion-header> -->
+      <ion-header-bar align-title="center" style="background-color: black;">
+        <div class="buttons">
+      <button class="custombutton icon ion-ios-bell" ui-sref="app.notifications"></button>
+ </div>
+
+ <h1 class="title"><img class="title-image" src="img/autotek_logo.png"  width="123" height="43" /></h1>
+  <div class="buttons">
+   <button ui-sref="app.settings" class="custombutton icon ion-gear-a" ></button>
+ </div>
+</ion-header-bar>
+    <ion-content class="ak-bg" scroll="false">
+        <div id="container" class="ak-bg">
+            <div id="innerContainer">
+              
+                <img src="img/background4.png" style="width: 100%; max-height: 100%;">
+                <div style="    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    margin: auto;
+    margin-top: -47%;">
+                    <img src="img/profileicon.png" style="width: 100%; height: 100%;">
+                </div>
+                <!--<div style="width: 40%;
+    margin: auto;
+    margin-top: -37%;">
+                    <img src="img/autotek_logo.png" style="width: 100%; height: 100%;">
+                </div>-->
+                <!--<button class="custombutton icon ion-ios-bell" ui-sref="app.notifications" style="    position: absolute;
+    top: 0px;"></button>-->
+                <div style="position: absolute; top: 60%; width: 100%; text-align: center; font-size: x-large; color: white;">
+                    {{user.FirstName}} {{user.LastName}}
+                </div>
+            </div>
+            <div id="sidecontainer1">
+                <a ng-click="$root.navigate('app.booking')">
+                    <img src="img/appointment2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            موعد
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="leftcontainer1">
+                <a ng-click="$root.navigate('promotions')">
+                    <img src="img/promotions2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            الترقيات
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="sidecontainer2">
+                <a ng-click="$root.navigate('location')">
+                    <img src="img/location2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            موقعنا
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="leftcontainer2">
+                <a ng-click="$root.navigate('promotion')">
+                    <img src="img/freeservice2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                           خدمات مجانية
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="sidecontainer3">
+                <a ng-click="$root.navigate('services')">
+                    <img src="img/services2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            خدمات
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="leftcontainer3">
+                <a ng-click="$root.navigate('history')">
+                    <img src="img/history2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            التاريخ
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="sidecontainer4">
+                <a ng-click="$root.navigate('about')">
+                    <img src="img/aboutus2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            معلومات عنا
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div id="leftcontainer4">
+                <a ng-click="$root.navigate('contact')">
+                    <img src="img/contactus2.png" style="width: 100%; height: 100%;">
+                    <div id="text">
+                        <p style="text-align: center; color: black;">
+                            اتصال
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

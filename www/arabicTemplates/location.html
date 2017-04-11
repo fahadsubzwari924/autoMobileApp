@@ -1,0 +1,31 @@
+<style>
+#map {
+  width: 100%;
+  height: 92%; }
+</style>
+
+<ion-view>
+    <ion-header>
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title">موقعنا</h1>
+        </div>
+    </ion-header>
+<ion-content class="has-header ak-bg" style="background-color: black;">
+<div class="list" style="text-align: center">
+  <select id="soflow" name="citySelect" ng-options="option.CityName for option in cities.availableOptions track by option.CityId" ng-model="cities.selectedOption" style="background-color: black;" ng-change="hasChanged()"> 
+    </select>
+    
+   <select id="soflow" name="branchSelect" ng-options="option.BranchName for option in branches.availableOptions track by option.Id" ng-model="branches.selectedOption" style="background-color: black;">
+<!--       <option>Jeddah</option>
+      <option selected>Riyadh</option>
+      <option>Red</option> -->
+    </select> 
+    </div>
+   
+       <div id="map"></div>  
+      
+</ion-content>
+</ion-view>

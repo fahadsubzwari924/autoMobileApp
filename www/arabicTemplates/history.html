@@ -1,0 +1,88 @@
+<style type="text/css">
+#historycontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.listitem {
+    height: 95px;
+    width: 100%;
+}
+
+.historycalender {
+    width: 90%;
+    height: 80px;
+    margin-top: 10px;
+    left: 5%;
+    position: absolute;
+    background-color: black;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.talkbubble {
+    width: 100%;
+    height: 30px;
+    background: red;
+    position: absolute;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.rectangle {
+    width: 100%;
+    height: 50px;
+    top: 30px;
+    position: absolute;
+    background: white;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#rupees {
+    position: absolute;
+    /* margin-right: 0px; */
+    margin-top: -30px;
+    right: 8px;
+    font-size: 15px;
+}
+</style>
+<ion-view>
+    <ion-header>
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title">عرض التاريخ</h1>
+        </div>
+    </ion-header>
+    <ion-content class="has-header ak-bg" style="background-color: black;">
+        <div id="historycontainer">
+            <div class="listitem" ng-repeat="x in history">
+                <div class="historycalender">
+                    <div class="talkbubble">
+                        <p style="color: white;text-align: left;margin-top: 4px; margin-left: 8px;">{{x.month}} {{x.date}}, {{x.year}}</p>
+                    </div>
+                    <div class="rectangle">
+                        <p style="color: black;text-align: left;margin-top: 12px; margin-left: 8px;">Ref # : {{x.SalesOrderNumber}} </p>
+                        <div id="rupees">
+                            {{x.TotalAmount}} SAR
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+             <ion-infinite-scroll on-infinite="getMoreHistory()" distance="1%" ng-if="noMoreHistory"></ion-infinite-scroll>
+
+        </div>
+    </ion-content>
+</ion-view>

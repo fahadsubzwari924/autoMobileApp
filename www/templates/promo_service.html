@@ -1,0 +1,36 @@
+<ion-view>
+    <ion-header>
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title">FREE SERVICE</h1>
+        </div>
+    </ion-header>
+    <ion-content class="ak-bg" style="background-color: black; overflow-y: hidden;" scroll="false">
+        <div class="logo-header ak-mt-50" style="margin-top: 70px;"></div>
+        <p class="ak-promotion-content"> EARN DISCOUNT </p>
+        <p class="ak-promotion-content">Invite your friends and get yourself a discount </p>
+        <p class="ak-promotion-content"> Send Your Promo Code </p>
+        <p class="ak-promotion-content">{{agentPromokeydata.PromoKey}}</p>
+        <button class="btn-share"> SHARE PROMO CODE </button>
+        <P class="ak-promotion-share">Were you invited by someone ? if yes enter his promo code to gain discount </p>
+       <div style=" text-align: center">
+        <input type="text" ng-model="user.password"  style="color: #fff; margin: auto; width:50%;" placeholder="Promo">
+       </div>
+      <div style="margin-top:70px; text-align:center;">
+           <button class="btn-save" style="margin-top:0px;"> SAVE </button>
+         </div>  
+        </div>
+        <div><p style="color:white; font-size:16px; text-align:center;margin-top:10px;">SHARE ON SOCIAL MEDIA</p></div>
+        <ul></ul>
+        <div style="text-align:center">
+        <div class="social-icons">
+            <a id="fb" ng-click="facebookshare()"> <img src="img/facebook_circle.png" style="margin-left: 10px; width:50px;"></a>
+            <a id="fb" ng-click="othershare()"> <img src="img/google_circle.png" style="margin-left: 1px; width:50px;"></a>
+            <a id="fb" ng-click="othershare()"> <img src="img/pinterest_circle.png" style="margin-left: 1px; width:50px;"></a>
+            <a id="fb" ng-click="twittershare()"><img src="img/twitter_circle.png" style="margin-left: 1px; width:50px;"></a>
+        </div>
+        </div>
+    </ion-content>
+</ion-view>

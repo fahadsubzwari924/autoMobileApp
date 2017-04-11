@@ -1,0 +1,33 @@
+<ion-view title="APPOINTMENTS">
+
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon" style="color: white;"></button>
+    </ion-nav-buttons>
+    <ion-content  class="has-header ak-bg" style="background-color: black;"	>
+<label style="color: #fff; width:70%; float:right;    margin-left: 2%; margin-top: 50px;">نوع الخدمة</label>
+		<div class="list">
+	<input type="text"  style="width: 96%;
+    margin: auto;
+    color: white;" placeholder="على سبيل المثال الطلاء" ng-model="final_obj.TypeOfService">
+    </div>
+
+
+    <label style="color: #fff; width:70%; float:right;    margin-left: 2%;">سيليكت السيارة</label>
+		<div class="list">
+    <select id="soflow" ng-options="option.ChassisNumber for option in vehicles.availableOptions track by option.Id"   ng-model="vehicles.selectedOption" style="background-color: black;    margin-left: 2%;" ng-change="hasChanged()"> 
+    </select>
+    </div>
+
+      <div style="    width: 96%;
+    margin: auto;
+    height: 40px;
+    text-align: center;
+    color: white;
+    border: solid;
+    padding: 8px;
+    border-width: 1px;
+    margin-top: 20px;" ng-click="book()">
+              موعد الكتاب
+            </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+<ion-view title="History">
+    <ion-nav-buttons side="left">
+        <button class="button button-icon ion-ios-arrow-back" style="color: white;" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon" style="color: white;"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header ak-bg" style="background-color: black;">
+         <div style="width:100%; height: 40px;background-color: white;margin-top: 10px;" ng-model="date" ng-click="openDatePicker()" >
+                <div style="line-height:40px; font-weight:bold; font-size:18px;"><span style="margin-left:20px;">{{showdate}}</span></div>
+                </div>
+    	<div ng-repeat="option in $scope.opt.availableOptions" style="color: white;">
+    	{{option.Name}}
+
+    	</div>
+    </ion-content>
+</ion-view>

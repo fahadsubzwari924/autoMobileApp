@@ -1,0 +1,27 @@
+<ion-view title="موعد">
+
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-navicon" style="color: white;"></button>
+    </ion-nav-buttons>
+<ion-content  class="has-header ak-bg" style="background-color: black;">
+<div>
+	<div dir="rtl" style="width:100%; float:left; padding-top:20px; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-right:20px;">
+    <div style="width: 150px;"><label style="color: #fff; width:70%; margin-right: 10px;">اختر مدينة</label></div>
+		<div class="list">
+    <select id="soflow" name="citySelect" ng-options="option.CityName for option in cities.availableOptions track by option.CityId" ng-model="cities.selectedOption" style="background-color: black;" ng-change="hasChanged()"> 
+    </select>
+    <div style="margin-top: 40px;">
+    <div style="width: 150px;"><label style="color: #fff; width:70%; margin-top: 60px;margin-right: 10px;">حدد فرع</label> </div>
+   <select  id="soflow" name="branchSelect" ng-options="option.BranchName for option in branches.availableOptions track by option.Id" ng-model="branches.selectedOption" style="background-color: black;">
+<!--       <option>Jeddah</option>
+      <option selected>Riyadh</option>
+      <option>Red</option> -->
+    </select>
+    </div>  
+      <div id="map" data-tap-disabled="true"></div>
+	</div>
+
+	 <button ng-click="next()" class="button button-block button-transparent" style="width:100%; border-radius:0px; float:left; padding-left:20px; padding-right:20px;"> التالى</button>
+</div>
+</ion-content>
+</ion-view>

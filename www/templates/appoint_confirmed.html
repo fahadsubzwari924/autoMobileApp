@@ -1,0 +1,27 @@
+<ion-view>
+    <ion-header>
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title">APPOINTMENTS</h1>
+        </div>
+    </ion-header>
+    <ion-content class="has-header ak-bg" style="background-color: black;">
+        <div style="position: relative; width: 100%; height: 100%;">
+            <div style="position: absolute; top: 25%; left: 20%; width: 60%; height: 35%;">
+                <img src="img/appointment_confirmed.png" style="width: 100%; height: 100%; ">
+            </div>
+            <div style="position: absolute; top: 62%; width: 100%;">
+                <p style="text-align: center; color: white; font-size: medium;">
+                    APPOINTMENT CONFIRMED
+                </p>
+            </div>
+            <div ng-click="gohome();" style="left: 10%; top: 80%; height: 6%; width: 80%; position:absolute; border-style: solid; border-color: white; border-width: thin; border-radius: 2%;">
+                <p style="text-align: center; color: white; font-size: 15px; margin-top: 2% ;">
+                    OK
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

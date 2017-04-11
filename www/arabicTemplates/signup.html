@@ -1,0 +1,48 @@
+<style type="text/css">
+.signupbox {
+    position: relative;
+    background-color: white;
+    height: 30%;
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 70%;
+}
+</style>
+<ion-view>
+    <ion-header>
+        <div class="bar bar-header bar-dark no-top">
+            <div class="buttons">
+                <button class="button button-icon ion-ios-arrow-back" nav-direction="back" ng-click="$ionicGoBack(); "></button>
+            </div>
+            <h1 class="title">SIGN UP</h1>
+        </div>
+    </ion-header>
+    <ion-content class="ak-bg" style="background-color: black;">
+        <div>
+            <div class="logo-header ak-mt-50"></div>
+            <form name="form" ng-submit="register()">
+                <div class="padding ak-pt-20">
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/profile_small_icon.png" class="lg-icons" />
+                        <input type="text" ng-model="user.FirstName" style=" color: #fff; width:70%; float:left;" placeholder="Name" />
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/mobile_icon.png" class="lg-icons" />
+                        <input type="number" ng-model="user.MobileNumber" style="color: #fff;  width:70%;float:left; background: transparent; border-bottom-color: white;border-bottom-style: solid; border-bottom-width: thin;" placeholder="Mobile">
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/email_icon.png" class="lg-icons" />
+                        <input type="email" ng-model="user.EmailAddress" style=" color: #fff; width:70%; float:left; background: transparent; border-bottom-color: white;border-bottom-style: solid; border-bottom-width: thin;" placeholder="Email" />
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <img src="img/password_icon.png" class="lg-icons" />
+                        <input type="password" ng-model="user.User.Password" style="color: #fff;  width:70%;float:left;" placeholder="Password">
+                    </div>
+                </div>
+                <div class="padding ak-pt-20">
+                    <button type="submit" class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:40px;margin-right:40px; padding-left:20px; padding-right:20px;"> SUBMIT </button>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

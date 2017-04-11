@@ -1,0 +1,490 @@
+/* Autotek Hybrid App CSS */
+
+
+/* Position & Placement */
+.ak-fixed { position: fixed; }
+.ak-relative { position: relative; }
+.ak-absolute { position: absolute; }
+.ak-l-float { float: left; }
+.ak-r-float { float: right; }
+.ak-no-float { float: none; }
+.ak-clearfix { clear: both; }
+/* End of Position & Placement */
+
+/* Alignments */
+.ak-l-align { text-align: left; }
+.ak-r-align { text-align: right; }
+.ak-m-align { text-align: center; }
+/* End of Alignments */
+
+/* Font Sizes */
+.ft-8 { font-size: 8px; }
+.ft-10 { font-size: 10px; }
+.ft-12 { font-size: 12px; }
+.ft-14 { font-size: 14px; }
+.ft-16 { font-size: 16px; }
+.ft-18 { font-size: 18px; }
+.ft-20 { font-size: 20px; }
+.ft-24 { font-size: 24px; }
+.ft-32 { font-size: 32px; }
+.ft-40 { font-size: 40px; }
+/* End of Font sizes */
+ 
+/* Margins */
+.ak-m-5 { margin: 5px; }
+.ak-m-10 { margin: 10px; }
+.ak-m-15 { margin: 15px; }
+.ak-m-20 { margin: 20px; }
+.ak-m-25 { margin: 25px; }
+.ak-m-30 { margin: 30px; }
+.ak-m-35 { margin: 35px; }
+.ak-m-40 { margin: 40px; }
+.ak-m-45 { margin: 45px; }
+.ak-m-50 { margin: 50px; }
+/* Margin Top */
+.ak-mt-5 { margin: 5px; }
+.ak-mt-10 { margin: 10px; }
+.ak-mt-15 { margin: 15px; }
+.ak-mt-20 { margin: 20px; }
+.ak-mt-25 { margin: 25px; }
+.ak-mt-30 { margin: 30px; }
+.ak-mt-35 { margin: 35px; }
+.ak-mt-40 { margin: 40px; }
+.ak-mt-45 { margin: 45px; }
+.ak-mt-50 { margin: 50px; }
+/* Margin Right */
+.ak-mr-5 { margin: 5px; }
+.ak-mr-10 { margin: 10px; }
+.ak-mr-15 { margin: 15px; }
+.ak-mr-20 { margin: 20px; }
+.ak-mr-25 { margin: 25px; }
+.ak-mr-30 { margin: 30px; }
+.ak-mr-35 { margin: 35px; }
+.ak-mr-40 { margin: 40px; }
+.ak-mr-45 { margin: 45px; }
+.ak-mr-50 { margin: 50px; }
+/* Margin Bottom */
+.ak-mb-5 { margin: 5px; }
+.ak-mb-10 { margin: 10px; }
+.ak-mb-15 { margin: 15px; }
+.ak-mb-20 { margin: 20px; }
+.ak-mb-25 { margin: 25px; }
+.ak-mb-30 { margin: 30px; }
+.ak-mb-35 { margin: 35px; }
+.ak-mb-40 { margin: 40px; }
+.ak-mb-45 { margin: 45px; }
+.ak-mb-50 { margin: 50px; }
+/* Margin Left */
+.ak-ml-5 { margin: 5px; }
+.ak-ml-10 { margin: 10px; }
+.ak-ml-15 { margin: 15px; }
+.ak-ml-20 { margin: 20px; }
+.ak-ml-25 { margin: 25px; }
+.ak-ml-30 { margin: 30px; }
+.ak-ml-35 { margin: 35px; }
+.ak-ml-40 { margin: 40px; }
+.ak-ml-45 { margin: 45px; }
+.ak-ml-50 { margin: 50px; }
+/* End of Margins */
+
+/* Padding */
+.ak-p-5 { margin: 5px; }
+.ak-p-10 { margin: 10px; }
+.ak-p-15 { margin: 15px; }
+.ak-p-20 { margin: 20px; }
+.ak-p-25 { margin: 25px; }
+.ak-p-30 { margin: 30px; }
+.ak-p-35 { margin: 35px; }
+.ak-p-40 { margin: 40px; }
+.ak-p-45 { margin: 45px; }
+.ak-p-50 { margin: 50px; }
+
+/* Padding Top */
+.ak-pt-5 { margin: 5px; }
+.ak-pt-10 { margin: 10px; }
+.ak-pt-15 { margin: 15px; }
+.ak-pt-20 { margin: 20px; }
+.ak-pt-25 { margin: 25px; }
+.ak-pt-30 { margin: 30px; }
+.ak-pt-35 { margin: 35px; }
+.ak-pt-40 { margin: 40px; }
+.ak-pt-45 { margin: 45px; }
+.ak-pt-50 { margin: 50px; }
+/* Padding Right */
+.ak-pr-5 { margin: 5px; }
+.ak-pr-10 { margin: 10px; }
+.ak-pr-15 { margin: 15px; }
+.ak-pr-20 { margin: 20px; }
+.ak-pr-25 { margin: 25px; }
+.ak-pr-30 { margin: 30px; }
+.ak-pr-35 { margin: 35px; }
+.ak-pr-40 { margin: 40px; }
+.ak-pr-45 { margin: 45px; }
+.ak-pr-50 { margin: 50px; }
+
+/* Padding Bottom */
+.ak-pb-5 { margin: 5px; }
+.ak-pb-10 { margin: 10px; }
+.ak-pb-15 { margin: 15px; }
+.ak-pb-20 { margin: 20px; }
+.ak-pb-25 { margin: 25px; }
+.ak-pb-30 { margin: 30px; }
+.ak-pb-35 { margin: 35px; }
+.ak-pb-40 { margin: 40px; }
+.ak-pb-45 { margin: 45px; }
+.ak-pb-50 { margin: 50px; }
+
+/* Padding Left */
+.ak-pl-5 { margin: 5px; }
+.ak-pl-10 { margin: 10px; }
+.ak-pl-15 { margin: 15px; }
+.ak-pl-20 { margin: 20px; }
+.ak-pl-25 { margin: 25px; }
+.ak-pl-30 { margin: 30px; }
+.ak-pl-35 { margin: 35px; }
+.ak-pl-40 { margin: 40px; }
+.ak-pl-45 { margin: 45px; }
+.ak-pl-50 { margin: 50px; }
+/* End of Padding */
+/*drop down css start*/
+
+/*drop down css end*/
+.logo-header {
+   width: 50%;
+   height: 64px;
+   background-image: url('../img/autotek_logo.png');    
+   background-size: contain;
+   background-repeat: no-repeat;
+    margin: 120px 0px 5px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+  
+.at-form-outline{
+    /*border:2px solid white;*/
+    height: 600px;
+    width:95%;
+    margin: auto;
+}
+.at-user-info{
+   width:300px;
+   /*background-color: white;*/
+}
+.at-profile-img{
+    width:66px;
+    padding-top: 10px;
+    padding-left: 15px;
+ 
+}
+.at-address-title{
+    color: white;
+    font-size: 20px;
+    margin-top: -40px;
+    margin-left: 80px;
+    /*font-weight: bold;*/
+}
+.at-address-text{
+    color: white;
+    font-size: 16px;
+    line-height: 100%;
+    padding-top: 10px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+hr{
+    width:280px;
+}
+.at-user-number{
+    color: white;
+    margin-left: 80px;
+    margin-top: -40px;
+    font-size: 16px;
+}
+.at-spacing{
+    margin-left: 40px;
+}
+.ak-bg{
+
+    background-image: url('../img/background2.png');
+    background-size: cover ;
+}
+at-pad{
+    margin-top: 15px !important;
+}
+.at-schedule p{
+color: white;
+margin-left: 20px;
+margin-top: 10px;
+}
+.lg-icons{
+
+   width:15%;
+   float:left;
+   margin-left:10px;
+   margin-right:10px;
+}
+
+.button-transparent{
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff ;
+}
+
+
+
+input[type="text"]
+{
+
+	background:transparent;
+	border-bottom: 1px solid white;
+}
+input[type="password"]
+{
+	background:transparent;
+	border-bottom: 1px solid white;
+}
+
+.ak-input{
+
+	width:100%;
+	float:left; 
+	padding-bottom:20px; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.ak-content{
+    margin-top: 21px;
+    color: whitesmoke;
+    /*line-height: 1px;*/
+}
+
+
+
+
+.border{
+  width: 600px;
+  height: 800px;
+     
+}
+.col{
+    text-align: right; 
+    margin-right: 10px;
+}
+.div1 {
+    width: 95%;
+    
+    border: 3px solid whitesmoke;
+    margin-left: 11px;
+}
+
+
+.blk-content{
+    width: 95%;
+    
+    position: relative;
+    margin-left: 5px;
+}
+    
+
+
+.ak-promotion-content{
+    margin: 0 0 10px;
+    color: white;
+    text-indent: inherit;
+    text-align: center;
+}
+.c{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 600px;
+    border-style: solid;
+    /*border-width: 2px;
+    border-color: #fff;
+    position: absolute;*/
+   
+}
+
+.d{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 80%;
+    position: absolute;
+   
+}
+.lg-sv-icons{
+	 width:35%;
+   float:left;
+ 
+}
+.img-rit{
+     width:35%;
+   float:right;
+   margin-right: -10px;;
+}
+
+
+
+select#soflow {
+   -webkit-appearance: button;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-repeat: no-repeat;
+   border: 2px solid #FFF;
+   color: white;
+   font-size: inherit;
+   overflow: hidden;
+   padding: 7px 10px;
+   width: 96%;
+   margin:auto;
+   margin-top: 8px;
+   background: transparent;
+   background-color: transparent;
+}
+
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.abt-p {
+    margin: 0 0 10px;
+    color: white;
+}
+
+.btn-share{
+    background: transparent;
+    width: 60%;
+    color: white;
+    height: 40px;
+    margin-left: 20%;
+    
+}
+
+
+.ak-promotion-share{
+margin: 14px 0 10px;
+    color: white;
+    text-indent: inherit;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.btn-save{
+background: transparent;
+    color: white;
+    height: 40px;    
+    
+}
+
+
+.social-icons{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    display: inline-block;
+    width: 280px;
+    margin-top: -5px;
+}
+.main-card{
+    width:100%;
+    height: 70px;
+    background-color: green;
+    border-radius: 15px;
+}
+
+
+.side-main {
+  width: 100%; height: 100%; position: relative; background-color: black;
+}
+
+.side-img {
+  margin-left:75px; height:125px; width: 125px;
+}
+
+.side-txt {
+   color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 75px;
+    margin-top: 5%;
+}
+
+
+.side-listitem {
+  color: white;padding-top: 10px;padding-left: 10px;padding-bottom: 10px;font-size: 18px;border-top-color: white;border-top-style: solid;border-top-width: thin;margin-left: 5%;width: 90%;
+}
+
+.padding-right-10px {
+  padding-right: 10px;
+}
+
+.first_header{
+    margin-top: 35px !important;
+    width: 90%;
+    margin:auto;
+    height: 40px;
+    background-color: black;
+    position: relative;
+}
+.content{
+    margin:auto;
+    height: 90px;
+    background-color: white;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+/*.content span{
+    color:black;
+    text-align: center !important;
+    font-size: 32px;
+    margin-top: 20px !important;
+}*/
+.second_header{
+    margin-top: 35px !important;
+    width: 90%;
+    margin:auto;
+    height: 40px;
+    background-color: red;
+    position: relative;
+}
+.custombutton {
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0 12px;
+    min-width: 52px;
+    min-height: 47px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    vertical-align: top;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 42px;
+    cursor: pointer;
+    text-transform: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+#gear_icon{
+    float: right;
+    position: absolute;
+    right: 0px;
+}

@@ -1,0 +1,66 @@
+
+<ion-view>
+    <ion-content class="ak-bg" style="background-color: black;">
+        <div>
+            <div class="logo-header ak-mt-50"></div>
+            <div style="position: relative; width: 70%; margin:auto;">
+              <img src="img/profile_small_icon.png" style="    width: 39px;height: 39px;position: absolute;top: 50%;margin-top: -15px;">
+              <input type="text"  ng-model="user.username" name="" style="display: inline-block;margin-left: 50px;color: white;width: 70%; " >
+            </div>
+            <div style="position: relative; width: 70%; margin:auto; margin-top: 20px;">
+              <img src="img/password_icon.png" style="width: 39px;height: 39px;position: absolute;top: 50%;margin-top: -15px;">
+              <input type="password" ng-model="user.password" name="" style="    display: inline-block;margin-left: 50px;color: white;    width: 70%; " placeholder="">
+            </div>
+<!--             <div class="padding ak-pt-20"> -->
+<!--                 <div style="width:80%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                    <img src="img/profile_small_icon.png" class="lg-icons" />
+                    <input type="text" ng-model="user.username" style=" color: #fff; width:70%; float:left;" placeholder="+966" />
+                </div> -->
+<!--                  <div style="width:80%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                    <img src="img/password_icon.png" class="lg-icons" />
+                    <input type="password" ng-model="user.password" style=" color: #fff; width:70%; float:left;" placeholder="" />
+                </div> -->
+<!-- 
+            </div> -->
+            <div style="width: 80%;margin: auto;height: 40px;text-align:center;color: white;border: solid;padding: 8px;border-width: 1px;margin-top: 20px;" ng-click="login(user)">
+              Login
+            </div>
+                <div style="width: 80%;margin: auto;height: 40px;text-align: center;color: white;border: solid;padding: 8px;border-width: 1px;margin-top: 20px;" ng-click="$root.navigate('register')">
+                    Sign Up
+            </div>
+<!--             <div class="padding">
+                <button class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:40px;margin-right:40px; padding-left:20px; padding-right:20px;" ng-click="login(user)"> LOGIN </button>
+                <center style="color: #fff; margin: auto; width: 60%; padding: 10px;">OR</center>
+                <button ui-sref="register" class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:40px;margin-right:40px; padding-left:20px; padding-right:20px;"> SIGN UP </button>
+            </div> -->
+            <div style="text-align: center;    margin-top: 10px;">
+            <div style="color: white;">Language</div>
+               <img src="img/usflag.png" style="width: 55px;"><label class="toggle toggle-calm disable-user-behavior" style="margin-left: 10px;"><input type="checkbox" ng-model="obj.lng" ng-change="get_value(lng)" class="ng-pristine ng-untouched ng-valid"><div class="track"><div class="handle"></div></div></label><img src="img/saudi.png" style="margin-left: 10px; width: 50px;">
+               </div>
+<!--              <div  ng-model="currentPage" ng-change="go(currentPage)">
+                <select ng-model="obj.lng" ng-change="get_value(lng)" style="margin-top: 60px;padding: 10px 20px 10px 20px;">
+                    <option selected  value="ar">Arabic</option>
+                    <option value="en">English</option>
+                </select>
+                </div> -->
+
+     
+        </div> 
+
+    </ion-content>
+</ion-view>
+  <script>
+      var readOnlyLength = $('#field').val().length;
+
+ $('#output').text(readOnlyLength);
+
+$('#field').on('keypress, keydown', function(event) {
+    var $field = $(this);
+    $('#output').text(event.which + '-' + this.selectionStart);
+    if ((event.which != 37 && (event.which != 39))
+        && ((this.selectionStart < readOnlyLength)
+        || ((this.selectionStart == readOnlyLength) && (event.which == 8)))) {
+        return false;
+    }
+});   
+      </script>

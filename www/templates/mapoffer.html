@@ -1,0 +1,54 @@
+<ion-view>
+    <ion-header-bar align-title="center" style="background-color: black;">
+        <div class="buttons"  style="color: white;padding: 7px;" ng-click="$root.navigate('main')">
+     	Cancel
+ </div>
+
+ <h1 class="title"><img class="title-image" src="img/autotek_logo.png"  width="123" height="43" /></h1>
+<div class="buttons"  style="color: white;padding: 7px;" ng-click="$root.navigate('main')">
+     	Done
+ </div>
+</ion-header-bar>
+<ion-content  class="ak-bg">
+<label style="color: #fff; width:70%; float:left;    margin-left: 2%;">SELECT OFFER</label>
+		<div class="list">
+    <select id="soflow" ng-options="option.Description_EN for option in offers.availableOptions track by option.Id"   ng-model="offers.selectedOption" style="background-color: black;    margin-left: 2%;" ng-change="hasChanged()"> 
+    </select>
+    </div>
+
+
+    <label style="color: #fff; width:70%; float:left;    margin-left: 2%;">SELECT VEHICLE</label>
+		<div class="list">
+    <select id="soflow" ng-options="option.ChassisNumber for option in vehicles.availableOptions track by option.Id"   ng-model="vehicles.selectedOption" style="background-color: black;    margin-left: 2%;" ng-change="hasChanged()"> 
+    </select>
+    </div>
+
+        <div style="width: 96%;margin: auto;height: 40px;text-align: center;color: white;border: solid;padding: 8px;border-width: 1px; margin-top: 20px;" ng-click="mapOffer()">
+              MAP
+            </div>
+
+            <div style="width: 96%;margin: auto;height: 40px;text-align: center;color: white;border: solid;padding: 8px;border-width: 1px;margin-top: 20px;" ng-click="showForm()">
+                REGISTER VEHICLE
+            </div>
+
+             <form name="form" ng-if="isShowing" >
+                <div class="padding ak-pt-20">
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <input type="text" ng-model="final_obj.PlateNumber" style=" color: #fff; width:100%; float:left;" placeholder="Plate Number e.g KCA-001" />
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <input type="text" ng-model="final_obj.ChassisNumber" style="color: #fff;  width:100%;float:left; background: transparent; border-bottom-color: white;border-bottom-style: solid; border-bottom-width: thin;" placeholder="Chassis Number e.g Chasis-003">
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px;margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <input type="text" ng-model="final_obj.VehicleName" style=" color: #fff; width:100%; float:left; background: transparent; border-bottom-color: white;border-bottom-style: solid; border-bottom-width: thin;" placeholder="Vehicle Name e.g Honda" />
+                    </div>
+                    <div style="width:90%; float:left; padding-bottom:20px; margin-left:13px; margin-right:40px; padding-left:20px; padding-right:20px;">
+                        <input type="text" ng-model="final_obj.EngineNumber" style="color: #fff;  width:100%;float:left;" placeholder="Engine Number e.g 999-4">
+                    </div>
+                </div>
+                <div class="padding ak-pt-20">
+                    <button ng-click="registerVehicle()" type="submit" class="button button-block button-transparent" style="width:80%; border-radius:0px; float:left;  margin-left:32px;margin-right:40px; padding-left:20px; padding-right:20px;"> SUBMIT </button>
+                </div>
+            </form>
+</ion-content>
+</ion-view>

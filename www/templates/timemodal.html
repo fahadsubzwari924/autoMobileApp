@@ -1,0 +1,17 @@
+<ion-modal-view>
+    <ion-header-bar style="background-color: black;">
+      <h1 class="title" style="color: white;">Select Time</h1>
+     <div class="buttons"  style="color: white;padding: 7px;" ng-click="closemodal()">
+     	Done
+ 	</div>
+    </ion-header-bar>
+ <ion-content class="has-header ak-bg" style="background-color: black;">
+        <div ng-repeat="x in timeslots track by $index" style="position: relative; color: white; border-bottom-style: solid; border-bottom-color: white; border-bottom-width: thin;" ng-click="selectTime($index)">
+            <p style="margin-top: 5px;margin-left: 25px;color: red;font-weight: bolder;">{{x.AppointmentDate}}</p>
+            <p style="margin-left: 25px;">{{x.BranchName}}</p>
+            <p style="margin-bottom: 5px; margin-left:25px;">{{x.StartTimeStr}} - {{x.EndTimeStr}}</p>
+            <img ng-if="x.isChecked" src="img/appointment_confirmed.png" style="width: 50px;float: right;margin-top: -70px;
+">
+        </div>
+    </ion-content>
+  </ion-modal-view>
